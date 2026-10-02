@@ -1,0 +1,5 @@
+
+> ec487-penalty-lab@0.3.0 build
+> node scripts/build.mjs
+
+Mode: supabase. Built static frontend and standalone practice preview. 12 instructor-provided teaching cards.

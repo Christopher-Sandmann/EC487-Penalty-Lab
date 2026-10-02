@@ -1,0 +1,12 @@
+{
+  "supabase_migrations_applied_and_smoke_tested": false,
+  "supabase_concurrent_submission_security_tests": false,
+  "native_ios_safari_tested": false,
+  "native_android_chrome_tested": false,
+  "desktop_refresh_multitab_reconnect_tested": false,
+  "github_pages_repository_subpath_tested": false,
+  "campus_shared_ip_sign_in_rehearsed": false,
+  "clock_cron_independent_timeouts_tested": false,
+  "instructor_teaching_card_review": false,
+  "evidence": "Not deployed. Mark checks true only after performing and recording them."
+}

@@ -1,0 +1,298 @@
+
+> ec487-penalty-lab@0.3.0 test
+> node scripts/build.mjs --practice && node --test tests/*.test.mjs
+
+Mode: practice. Built static frontend and standalone practice preview. 12 instructor-provided teaching cards.
+TAP version 13
+# Subtest: matching is immediate and independent of educational cards; signup is only username and preference
+ok 1 - matching is immediate and independent of educational cards; signup is only username and preference
+  ---
+  duration_ms: 4.469181
+  type: 'test'
+  ...
+# Subtest: briefing blocks choices; both acknowledgements start a fresh 12-second clock exactly once
+ok 2 - briefing blocks choices; both acknowledgements start a fresh 12-second clock exactly once
+  ---
+  duration_ms: 0.947363
+  type: 'test'
+  ...
+# Subtest: unresponsive briefing times out without choices, draw, role progress or card consumption
+ok 3 - unresponsive briefing times out without choices, draw, role progress or card consumption
+  ---
+  duration_ms: 0.745179
+  type: 'test'
+  ...
+# Subtest: private choices stay hidden in both snapshots and all statistical projections
+ok 4 - private choices stay hidden in both snapshots and all statistical projections
+  ---
+  duration_ms: 0.844939
+  type: 'test'
+  ...
+# Subtest: two submissions and 50 repeated pairs commit one result and one random draw
+ok 5 - two submissions and 50 repeated pairs commit one result and one random draw
+  ---
+  duration_ms: 1.26569
+  type: 'test'
+  ...
+# Subtest: decision timeout consumes no role or teaching card; responsive player rematches independently
+ok 6 - decision timeout consumes no role or teaching card; responsive player rematches independently
+  ---
+  duration_ms: 0.451117
+  type: 'test'
+  ...
+# Subtest: exact deadline is excluded; late second choice cannot produce an outcome
+ok 7 - exact deadline is excluded; late second choice cannot produce an outcome
+  ---
+  duration_ms: 0.331608
+  type: 'test'
+  ...
+# Subtest: registration is idempotent, usernames unique, preference immutable
+ok 8 - registration is idempotent, usernames unique, preference immutable
+  ---
+  duration_ms: 0.307131
+  type: 'test'
+  ...
+# Subtest: host rights and export cannot be obtained with a room code or student session
+ok 9 - host rights and export cannot be obtained with a room code or student session
+  ---
+  duration_ms: 0.499791
+  type: 'test'
+  ...
+# Subtest: pause and closed entry do not interrupt an already paired briefing or live penalty
+ok 10 - pause and closed entry do not interrupt an already paired briefing or live penalty
+  ---
+  duration_ms: 0.514814
+  type: 'test'
+  ...
+# Subtest: persisted state recovers the same briefing, clock, unseen result and progress
+ok 11 - persisted state recovers the same briefing, clock, unseen result and progress
+  ---
+  duration_ms: 0.803566
+  type: 'test'
+  ...
+# Subtest: reading minimum is server-enforced; feedback never auto-advances while reading
+ok 12 - reading minimum is server-enforced; feedback never auto-advances while reading
+  ---
+  duration_ms: 0.982385
+  type: 'test'
+  ...
+# Subtest: roles at the cap are never assigned again
+ok 13 - roles at the cap are never assigned again
+  ---
+  duration_ms: 0.37316
+  type: 'test'
+  ...
+# Subtest: lone participant waits without a bot, bye, fabricated choice or result
+ok 14 - lone participant waits without a bot, bye, fabricated choice or result
+  ---
+  duration_ms: 0.138848
+  type: 'test'
+  ...
+# Subtest: future-degree guard does not strand the last present player who is reading
+ok 15 - future-degree guard does not strand the last present player who is reading
+  ---
+  duration_ms: 0.191828
+  type: 'test'
+  ...
+# Subtest: ending room cancels a briefing or locked attempt but never produces a result
+ok 16 - ending room cancels a briefing or locked attempt but never produces a result
+  ---
+  duration_ms: 0.366711
+  type: 'test'
+  ...
+# Subtest: 200 seeded asynchronous rosters (2,3,4,7,10 players) all complete 12 penalties with 6 in each role
+ok 17 - 200 seeded asynchronous rosters (2,3,4,7,10 players) all complete 12 penalties with 6 in each role
+  ---
+  duration_ms: 212.9325
+  type: 'test'
+  ...
+# Subtest: a live build cannot silently become practice when the keys are missing
+ok 18 - a live build cannot silently become practice when the keys are missing
+  ---
+  duration_ms: 1.453022
+  type: 'test'
+  ...
+# Subtest: only public Supabase keys can enter a live build
+ok 19 - only public Supabase keys can enter a live build
+  ---
+  duration_ms: 0.441062
+  type: 'test'
+  ...
+# Subtest: configuration strips credentials from isolated practice and validates live origins
+ok 20 - configuration strips credentials from isolated practice and validates live origins
+  ---
+  duration_ms: 0.244206
+  type: 'test'
+  ...
+# Subtest: all twelve countdown seconds have a cue, only the final three are urgent
+ok 21 - all twelve countdown seconds have a cue, only the final three are urgent
+  ---
+  duration_ms: 0.141563
+  type: 'test'
+  ...
+# Subtest: human match views contain the real usernames, never the simulated label
+ok 22 - human match views contain the real usernames, never the simulated label
+  ---
+  duration_ms: 6.152909
+  type: 'test'
+  ...
+# Subtest: v3 patch preserves the payoff technology and adds least-privilege private signals
+ok 23 - v3 patch preserves the payoff technology and adds least-privilege private signals
+  ---
+  duration_ms: 0.441383
+  type: 'test'
+  ...
+# NULL_SIMULATION families=1000 crossed=30 seed=4872026 looks=200
+# Subtest: all four exact technology cells
+ok 24 - all four exact technology cells
+  ---
+  duration_ms: 2.435187
+  type: 'test'
+  ...
+# Subtest: canonical labels use the kicker preference for all own/opponent combinations
+ok 25 - canonical labels use the kicker preference for all own/opponent combinations
+  ---
+  duration_ms: 0.36607
+  type: 'test'
+  ...
+# Subtest: minimax indifference and saddle point are derived, not rounded constants
+ok 26 - minimax indifference and saddle point are derived, not rounded constants
+  ---
+  duration_ms: 0.141563
+  type: 'test'
+  ...
+# Subtest: boundary limits and no-data interval
+ok 27 - boundary limits and no-data interval
+  ---
+  duration_ms: 1.867975
+  type: 'test'
+  ...
+# Subtest: confidence roots, symmetry, and large-n stability
+ok 28 - confidence roots, symmetry, and large-n stability
+  ---
+  duration_ms: 1.954345
+  type: 'test'
+  ...
+# Subtest: stable log-gamma and rejected invalid inputs
+ok 29 - stable log-gamma and rejected invalid inputs
+  ---
+  duration_ms: 0.412279
+  type: 'test'
+  ...
+# Subtest: secure identifiers and permutation invariants
+ok 30 - secure identifiers and permutation invariants
+  ---
+  duration_ms: 8.941147
+  type: 'test'
+  ...
+# Subtest: reproducible null simulation, 1,000 families × 12 streams × 200 looks
+ok 31 - reproducible null simulation, 1,000 families × 12 streams × 200 looks
+  ---
+  duration_ms: 80.116601
+  type: 'test'
+  ...
+# Subtest: exactly twelve prespecified conditional streams; empty strata are not zero
+ok 32 - exactly twelve prespecified conditional streams; empty strata are not zero
+  ---
+  duration_ms: 1.688205
+  type: 'test'
+  ...
+# Subtest: opposite preferences do not silently redefine keeper N
+ok 33 - opposite preferences do not silently redefine keeper N
+  ---
+  duration_ms: 2.404721
+  type: 'test'
+  ...
+# Subtest: buffer out-of-order outcomes; cancellation permanently freezes inference prefix only
+ok 34 - buffer out-of-order outcomes; cancellation permanently freezes inference prefix only
+  ---
+  duration_ms: 1.912272
+  type: 'test'
+  ...
+# Subtest: one outcome contributes one observation to each player role, with no timeout contamination
+ok 35 - one outcome contributes one observation to each player role, with no timeout contamination
+  ---
+  duration_ms: 1.195545
+  type: 'test'
+  ...
+# Subtest: balanced scores do not inflate with team size or unequal role sample sizes
+ok 36 - balanced scores do not inflate with team size or unequal role sample sizes
+  ---
+  duration_ms: 6.935905
+  type: 'test'
+  ...
+# Subtest: same-team encounters have complementary payoffs and no bonus
+ok 37 - same-team encounters have complementary payoffs and no bonus
+  ---
+  duration_ms: 0.241012
+  type: 'test'
+  ...
+# Subtest: rank qualifies only after both roles; ties use balanced actual results then stable alias
+ok 38 - rank qualifies only after both roles; ties use balanced actual results then stable alias
+  ---
+  duration_ms: 0.256976
+  type: 'test'
+  ...
+# Subtest: exactly twelve instructor text boxes, in order, without paste-encoding artifacts
+ok 39 - exactly twelve instructor text boxes, in order, without paste-encoding artifacts
+  ---
+  duration_ms: 0.56619
+  type: 'test'
+  ...
+# Subtest: QR is deterministic, complete and rejects over-capacity UTF-8 URLs
+ok 40 - QR is deterministic, complete and rejects over-capacity UTF-8 URLs
+  ---
+  duration_ms: 4.265646
+  type: 'test'
+  ...
+# Subtest: live socket listens to the owner-specific player signal as well as room controls
+ok 41 - live socket listens to the owner-specific player signal as well as room controls
+  ---
+  duration_ms: 4.457143
+  type: 'test'
+  ...
+# Subtest: Auth retains a valid in-memory session when browser storage is unavailable
+ok 42 - Auth retains a valid in-memory session when browser storage is unavailable
+  ---
+  duration_ms: 0.360611
+  type: 'test'
+  ...
+# Subtest: a missing live config never instantiates a simulated practice engine
+ok 43 - a missing live config never instantiates a simulated practice engine
+  ---
+  duration_ms: 0.635364
+  type: 'test'
+  ...
+# Subtest: all 10,000 draw values in every preference/action cell preserve exact goal counts
+ok 44 - all 10,000 draw values in every preference/action cell preserve exact goal counts
+  ---
+  duration_ms: 10.809853
+  type: 'test'
+  ...
+# Subtest: every trajectory follows the chosen screen side at every frame; keeper dives independently
+ok 45 - every trajectory follows the chosen screen side at every frame; keeper dives independently
+  ---
+  duration_ms: 8.72377
+  type: 'test'
+  ...
+# Subtest: goal, save, post, wide and high endpoints are physically distinct
+ok 46 - goal, save, post, wide and high endpoints are physically distinct
+  ---
+  duration_ms: 0.247341
+  type: 'test'
+  ...
+# Subtest: invalid draw inputs are rejected
+ok 47 - invalid draw inputs are rejected
+  ---
+  duration_ms: 0.348243
+  type: 'test'
+  ...
+1..47
+# tests 47
+# suites 0
+# pass 47
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 285.982469

@@ -1,0 +1,1 @@
+{"matrix_units":{"UU":5911,"UN":9410,"NU":9310,"NN":7122},"denominator":10000,"decision_ms":12000,"feedback_ms":5000,"appearances_per_role":6,"presence_ms":25000,"alpha_family":0.05,"inference_streams":12,"briefing_min_ms":2400,"briefing_timeout_ms":35000,"reveal_ms":2200}

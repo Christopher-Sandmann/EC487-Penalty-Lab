@@ -1,0 +1,16 @@
+
+> ec487-penalty-lab@0.3.0 test:http
+> node scripts/http-tests.mjs
+
+PASS room code and ordinary session cannot create or control rooms
+PASS registration retries preserve one identity and one immutable preference
+PASS direct unauthorized read/write endpoints reject attempts
+PASS both probability reminders must be acknowledged before the private twelve-second clock begins
+PASS opponent direction stays inaccessible in snapshot and statistics until both commit
+PASS 60 simultaneous retries release one result, make one draw, increment each participant once
+PASS first choice remains immutable after reveal
+PASS reading interval cannot be bypassed by calling the API
+PASS independent repeat requests recover pending feedback and the same result
+PASS audit export is host-only and includes roles, labels, probabilities and timing
+PASS server clock cancels a silent opponent without a draw or progress, independently of client polling
+{"transport":"local HTTP","tests":11,"passed":true,"cloud_tested":false}

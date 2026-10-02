@@ -1,0 +1,110 @@
+STEP 1440 0 prepare
+STEP 1440 0 read
+STEP 1440 0 continue
+STEP 1440 0 continued
+STEP 1440 1 prepare
+STEP 1440 1 read
+STEP 1440 1 continue
+STEP 1440 1 continued
+STEP 1440 2 prepare
+STEP 1440 2 read
+STEP 1440 2 continue
+STEP 1440 2 continued
+STEP 1440 3 prepare
+STEP 1440 3 read
+STEP 1440 3 continue
+STEP 1440 3 continued
+STEP 1440 4 prepare
+STEP 1440 4 read
+STEP 1440 4 continue
+STEP 1440 4 continued
+STEP 1440 5 prepare
+STEP 1440 5 read
+STEP 1440 5 continue
+STEP 1440 5 continued
+STEP 1440 6 prepare
+STEP 1440 6 read
+STEP 1440 6 continue
+STEP 1440 6 continued
+STEP 1440 7 prepare
+STEP 1440 7 read
+STEP 1440 7 continue
+STEP 1440 7 continued
+STEP 1440 8 prepare
+STEP 1440 8 read
+STEP 1440 8 continue
+STEP 1440 8 continued
+STEP 1440 9 prepare
+STEP 1440 9 read
+STEP 1440 9 continue
+STEP 1440 9 continued
+STEP 1440 10 prepare
+STEP 1440 10 read
+STEP 1440 10 continue
+STEP 1440 10 continued
+STEP 1440 11 prepare
+STEP 1440 11 read
+STEP 1440 11 continue
+STEP 1440 11 continued
+PASS 1440px complete game: twelve reminders, four correct probabilities, private choices, six strikes and six keeps
+PASS 1440px exact twelve instructor texts, in order; no economist selection or referee
+PASS 1440px persistent history: correct role shape, personal win/loss and striker N/U; detail tap works
+PASS 1440px frequencies-first statistics, four charts and prescribed opponent filters; all twelve boxes accessible
+PASS 1440px keyboard/touch, 48px+ action targets, reduced-motion and no horizontal overflow or JavaScript errors
+STEP 360 0 prepare
+STEP 360 0 read
+STEP 360 0 continue
+STEP 360 0 continued
+STEP 360 1 prepare
+STEP 360 1 read
+STEP 360 1 continue
+STEP 360 1 continued
+STEP 360 2 prepare
+STEP 360 2 read
+STEP 360 2 continue
+STEP 360 2 continued
+STEP 360 3 prepare
+STEP 360 3 read
+STEP 360 3 continue
+STEP 360 3 continued
+STEP 360 4 prepare
+STEP 360 4 read
+STEP 360 4 continue
+STEP 360 4 continued
+STEP 360 5 prepare
+STEP 360 5 read
+STEP 360 5 continue
+STEP 360 5 continued
+STEP 360 6 prepare
+STEP 360 6 read
+STEP 360 6 continue
+STEP 360 6 continued
+STEP 360 7 prepare
+STEP 360 7 read
+STEP 360 7 continue
+STEP 360 7 continued
+STEP 360 8 prepare
+STEP 360 8 read
+STEP 360 8 continue
+STEP 360 8 continued
+STEP 360 9 prepare
+STEP 360 9 read
+STEP 360 9 continue
+STEP 360 9 continued
+STEP 360 10 prepare
+STEP 360 10 read
+STEP 360 10 continue
+STEP 360 10 continued
+STEP 360 11 prepare
+STEP 360 11 read
+STEP 360 11 continue
+STEP 360 11 continued
+PASS 360px complete game: twelve reminders, four correct probabilities, private choices, six strikes and six keeps
+PASS 360px exact twelve instructor texts, in order; no economist selection or referee
+PASS 360px persistent history: correct role shape, personal win/loss and striker N/U; detail tap works
+PASS 360px frequencies-first statistics, four charts and prescribed opponent filters; all twelve boxes accessible
+PASS 360px keyboard/touch, 48px+ action targets, reduced-motion and no horizontal overflow or JavaScript errors
+PERF {"audio_enabled": true, "viewport": "1440x1000", "device_pixel_ratio": 1, "mobile_emulation": false, "frames_sampled": 246, "mean_frame_ms": 16.665, "median_frame_ms": 16.7, "p95_frame_ms": 16.7, "mean_fps": 60.01, "frames_over_25ms": 0, "max_frame_ms": 16.8}
+PASS 1440px real-time animated shot and feedback run without JavaScript errors
+PERF {"audio_enabled": true, "viewport": "360x800", "device_pixel_ratio": 2, "mobile_emulation": true, "frames_sampled": 244, "mean_frame_ms": 16.666, "median_frame_ms": 16.7, "p95_frame_ms": 16.7, "mean_fps": 60.0, "frames_over_25ms": 0, "max_frame_ms": 16.8}
+PASS 360px real-time animated shot and feedback run without JavaScript errors

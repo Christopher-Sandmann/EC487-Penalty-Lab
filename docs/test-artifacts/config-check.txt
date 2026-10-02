@@ -1,0 +1,6 @@
+
+> ec487-penalty-lab@0.3.0 test:config
+> node scripts/check-config.mjs
+
+Shared matrix, briefing/choice timing and Supabase seed match. No economist/vote fields.
+Dashboard SQL bundles match the migrations.

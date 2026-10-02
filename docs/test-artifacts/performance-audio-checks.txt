@@ -1,0 +1,5 @@
+PERF {"audio_enabled": true, "viewport": "1440x1000", "device_pixel_ratio": 1, "mobile_emulation": false, "frames_sampled": 246, "mean_frame_ms": 16.666, "median_frame_ms": 16.7, "p95_frame_ms": 16.7, "mean_fps": 60.0, "frames_over_25ms": 0, "max_frame_ms": 16.8}
+PASS 1440px real-time animated shot and feedback run without JavaScript errors
+PERF {"audio_enabled": true, "viewport": "360x800", "device_pixel_ratio": 2, "mobile_emulation": true, "frames_sampled": 246, "mean_frame_ms": 16.666, "median_frame_ms": 16.7, "p95_frame_ms": 16.8, "mean_fps": 60.0, "frames_over_25ms": 0, "max_frame_ms": 16.8}
+PASS 360px real-time animated shot and feedback run without JavaScript errors
+PASS Missing live configuration stays on setup screen across navigation; never falls back to practice

@@ -1,0 +1,28 @@
+
+> ec487-penalty-lab@0.3.0 test:load
+> node scripts/load-test.mjs
+
+{
+  "localAlgorithmOnly": true,
+  "networkOrCloudCapacityClaim": false,
+  "results": [
+    {
+      "players": 31,
+      "validPenalties": 186,
+      "allSixPlusSix": true,
+      "algorithmMs": 19
+    },
+    {
+      "players": 60,
+      "validPenalties": 360,
+      "allSixPlusSix": true,
+      "algorithmMs": 35
+    },
+    {
+      "players": 100,
+      "validPenalties": 600,
+      "allSixPlusSix": true,
+      "algorithmMs": 74
+    }
+  ]
+}

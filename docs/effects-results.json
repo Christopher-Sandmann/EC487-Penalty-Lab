@@ -1,0 +1,16 @@
+{
+  "browser": "144.0.7559.96",
+  "checks": [
+    {
+      "name": "UI opt-in unlocks audio; live countdown, kick and result schedule sound; speaker/haptic switches work",
+      "passed": true
+    },
+    {
+      "name": "All five result cues, 12 countdown ticks, last-three urgency, one-shot deduplication and mute silence",
+      "passed": true
+    }
+  ],
+  "physical_hardware_tested": false,
+  "cloud_tested": false,
+  "note": "Web Audio source scheduling and a stubbed navigator.vibrate were observed; no claim that a physical phone vibrated or that a human auditioned the synthesized sound."
+}
