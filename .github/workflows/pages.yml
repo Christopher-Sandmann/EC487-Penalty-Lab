@@ -1,0 +1,96 @@
+name: Verify and deploy Penalty Lab
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: penalty-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    permissions:
+      contents: read
+      pages: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm test
+      - run: node scripts/check-config.mjs
+      - run: node scripts/http-tests.mjs
+
+      - name: Build relative-path static frontend
+        run: npm run build
+        env:
+          PENALTY_MODE: ${{ vars.PENALTY_MODE || 'supabase' }}
+          PENALTY_SUPABASE_URL: ${{ vars.PENALTY_SUPABASE_URL }}
+          PENALTY_SUPABASE_PUBLISHABLE_KEY: ${{ vars.PENALTY_SUPABASE_PUBLISHABLE_KEY }}
+          PENALTY_TURNSTILE_SITE_KEY: ${{ vars.PENALTY_TURNSTILE_SITE_KEY }}
+          PENALTY_DEFAULT_ROOM: ${{ vars.PENALTY_DEFAULT_ROOM || 'EC487' }}
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  database-tests:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: local-ci-only
+          POSTGRES_DB: penalty_ci
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres -d penalty_ci"
+          --health-interval 5s --health-timeout 5s --health-retries 15
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
+      - name: Install PostgreSQL client
+        run: sudo apt-get update -qq && sudo apt-get install -y postgresql-client
+
+      - name: Exercise the real SQL authority with test auth identities
+        run: npm run test:postgres
+        env:
+          PENALTY_TEST_DATABASE: 'true'
+          PGHOST: 127.0.0.1
+          PGPORT: '5432'
+          PGUSER: postgres
+          PGPASSWORD: local-ci-only
+          PGDATABASE: penalty_ci
+
+  deploy:
+    needs: [build, database-tests]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
